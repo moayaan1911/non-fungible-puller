@@ -6,12 +6,20 @@ const Navbar = () => {
       <h1 className="font-extrabold text-3xl mr-5"> 🖼️NonFungible Puller</h1>
 
       <button>
-        <a href="https://linktr.ee/ayaaneth" target={"_blank"} rel="noreferrer">
+        <a
+          href="https://forms.gle/A4gT5aPAXXKnGQok9"
+          target={"_blank"}
+          rel="noreferrer"
+        >
           FEEDBACK FORM
         </a>
       </button>
       <button>
-        <a href="https://linktr.ee/ayaaneth" target={"_blank"} rel="noreferrer">
+        <a
+          href="https://github.com/moayaan1911/non-fungible-puller"
+          target={"_blank"}
+          rel="noreferrer"
+        >
           GITHUB REPO
         </a>
       </button>

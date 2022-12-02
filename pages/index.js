@@ -4,6 +4,8 @@ import React, { useState } from "react";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import NftCard from "./components/NftCard";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 const Home = () => {
   const [wallet, setWallet] = useState("");
   const [collection, setCollection] = useState("");
@@ -14,7 +16,14 @@ const Home = () => {
   const [buttonClick, setButtonClick] = useState(false);
   const fetchNfts = async () => {
     let nfts_eth, nfts_mumbai, nfts_poly, nfts_goerli;
+    const resolveAfter3Sec = new Promise((resolve) =>
+      setTimeout(resolve, 4500)
+    );
     if (wallet.length) {
+      toast.promise(resolveAfter3Sec, {
+        pending: "Fetching your NFTs",
+        success: "NFTs Fetched 👌",
+      });
       const api_eth = process.env.API_ETH;
       const baseURL_eth = `https://eth-mainnet.g.alchemy.com/v2/${api_eth}/getNFTs/`;
       const baseURL_mumbai = `https://polygon-mumbai.g.alchemy.com/v2/${api_eth}/getNFTs/`;
@@ -54,6 +63,9 @@ const Home = () => {
       setNFTs_mumbai(nfts_mumbai.ownedNfts);
       setNFTs_poly(nfts_poly.ownedNfts);
     } else {
+      toast.error(
+        "PLEASE enter wallet address (no .eth domains and no invalid addresses"
+      );
     }
   };
 
@@ -62,6 +74,16 @@ const Home = () => {
       <Script
         src="https://kit.fontawesome.com/9b9304f5bd.js"
         crossorigin="anonymous"
+      />
+      <ToastContainer
+        position="top-center"
+        autoClose={3000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        theme="light"
       />
       <Navbar />
       <div className="flex flex-col items-center justify-center py-8 gap-y-4">

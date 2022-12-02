@@ -15,7 +15,7 @@ const Footer = () => {
           Created by <i className="fa-brands fa-ethereum"></i>{" "}
           <span className="underline font-normal cursor-pointer md:font-extrabold">
             <a
-              href="https://linktr.ee/ayaaneth"
+              href="hhttps://app.ens.domains/name/moayaan.eth/details"
               target={"_blank"}
               rel="noreferrer"
             >
