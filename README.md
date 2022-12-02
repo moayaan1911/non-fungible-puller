@@ -51,7 +51,9 @@ Steps to run this project on your local machine:-
 
 3. Run `yarn` OR `npm i --legacy-peer-deps`
 
-4. Run `yarn dev` OR `npm run dev`
+4. Create a new .env file with entries mentioned in .env.example file.
+
+5. Run `yarn dev` OR `npm run dev`
 
 ---
 
