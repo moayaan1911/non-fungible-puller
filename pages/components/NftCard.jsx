@@ -10,7 +10,7 @@ const NftCard = ({ nft }) => {
           className="object-fill h-5/6 w-full rounded-t-md"
         />
       </div>
-      <div className="flex flex-col gap-y-2 px-2 py-3 bg-slate-100 rounded-b-md h-110">
+      <div className="flex flex-col gap-y-2 px-2 py-3 bg-slate-100 rounded-b-md h-fit">
         <div>
           <h2 className="font-bold">Title:</h2>
           <h2>{nft?.title}</h2>
