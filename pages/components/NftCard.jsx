@@ -16,7 +16,7 @@ const NftCard = ({ nft }) => {
           <h2>{nft?.title}</h2>
           <p>{nft?.contract.address}</p>
         </div>
-        <div className="flex-grow mt-2 flex-col">
+        <div className="flex-grow mt-2 flex-col px-2">
           <h2 className="font-bold">Description:</h2>
           <p>{nft?.description?.substr(0, 150)}</p>
         </div>
