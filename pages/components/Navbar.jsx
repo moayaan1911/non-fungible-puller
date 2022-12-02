@@ -24,7 +24,11 @@ const Navbar = () => {
         </a>
       </button>
       <button>
-        <a href="https://linktr.ee/ayaaneth" target={"_blank"} rel="noreferrer">
+        <a
+          href="https://youtu.be/ed4-9j0uqI0"
+          target={"_blank"}
+          rel="noreferrer"
+        >
           Video Demo
         </a>
       </button>

@@ -31,6 +31,7 @@ const Home = () => {
       const baseURL_goerli = `https://eth-goerli.g.alchemy.com/v2/${api_eth}/getNFTs/`;
       var requestOptions = {
         method: "GET",
+        redirect: "follow",
       };
 
       const fetchUrl_eth = `${baseURL_eth}?owner=${wallet}`;

@@ -1,6 +1,6 @@
 # NonFungible Puller
 
-**Deployment Link:-**
+**Deployment Link:-https://non-fungible-puller.vercel.app/**
 
 ---
 
@@ -15,7 +15,7 @@
 
 ## Video DEMO:-
 
-[Video Demo of NonFungible Puller App]()
+[Video Demo of NonFungible Puller App](https://youtu.be/ed4-9j0uqI0)
 
 ---
 
