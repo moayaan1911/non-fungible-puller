@@ -14,14 +14,6 @@ const NftCard = ({ nft }) => {
         <div>
           <h2 className="font-bold">Title:</h2>
           <h2>{nft.title}</h2>
-          {/* <p>{nft.id.tokenId.substr(nft.id.tokenId.length - 4)}</p> */}
-          <h2 className="font-bold">Address:</h2>
-          {/* <p>{`${nft.contract.address.substr(
-            0,
-            5
-          )}....${nft.contract.address.substr(
-            nft.contract.address.length - 4
-          )}`}</p> */}
           <p>{nft.contract.address}</p>
         </div>
         <div className="flex-grow mt-2 flex-col">
