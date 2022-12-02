@@ -72,6 +72,17 @@ const Home = () => {
 
   return (
     <>
+      <Head>
+        <title>Non Fungible Puller</title>
+        <meta
+          name="description"
+          content="NFT Puller Gallery for Ethereum and Polygon"
+        />
+        <meta
+          name="keywords"
+          content="web3 ethereum polygon mumbai goerli alchemy nft nftpuller nft gallery"
+        />
+      </Head>
       <Script
         src="https://kit.fontawesome.com/9b9304f5bd.js"
         crossorigin="anonymous"

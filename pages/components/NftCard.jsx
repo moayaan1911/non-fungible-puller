@@ -2,12 +2,12 @@ import React from "react";
 
 const NftCard = ({ nft }) => {
   return (
-    <div className="w-5/6 justify-center flex flex-col flex-wrap md:w-1/4 items-center text-center">
+    <div className="w-5/6 justify-center flex flex-col flex-wrap md:w-1/4 items-center text-center border-4 border-blue-100">
       <div className="rounded-md">
         <img
           src={nft?.media[0].gateway}
           alt={`${nft?.title} Image`}
-          className="object-cover h-5/6 w-full rounded-t-md"
+          className="object-fill h-5/6 w-full rounded-t-md"
         />
       </div>
       <div className="flex flex-col gap-y-2 px-2 py-3 bg-slate-100 rounded-b-md h-110">
